@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BML;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace PV2
         public frmMarcas()
         {
             InitializeComponent();
+        }
+
+        private void frmMarcas_Load(object sender, EventArgs e)
+        {
+            marcaBindingSource.DataSource = new Marca().GetAll();
+            gvMarcas.BestFitColumns();
         }
     }
 }

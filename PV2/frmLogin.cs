@@ -16,6 +16,7 @@ namespace PV2
         public frmLogin()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
@@ -24,6 +25,11 @@ namespace PV2
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -34,6 +34,7 @@ namespace PV2
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btnSalir = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem3 = new DevExpress.XtraBars.BarSubItem();
             this.btnProductos = new DevExpress.XtraBars.BarButtonItem();
@@ -70,8 +71,9 @@ namespace PV2
             this.btnSalir,
             this.btnProductos,
             this.btnMarcas,
-            this.btnCategorias});
-            this.barManager1.MaxItemId = 8;
+            this.btnCategorias,
+            this.barButtonItem1});
+            this.barManager1.MaxItemId = 9;
             this.barManager1.OptionsStubGlyphs.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Black;
             // 
             // bar1
@@ -92,8 +94,17 @@ namespace PV2
             this.barSubItem2.Id = 2;
             this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSalir, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.barSubItem2.Name = "barSubItem2";
+            this.barSubItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Cerrar sesión";
+            this.barButtonItem1.Id = 8;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // btnSalir
             // 
@@ -113,6 +124,7 @@ namespace PV2
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnMarcas, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCategorias, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.barSubItem3.Name = "barSubItem3";
+            this.barSubItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // btnProductos
             // 
@@ -244,5 +256,6 @@ namespace PV2
         private DevExpress.XtraBars.BarButtonItem btnMarcas;
         private DevExpress.XtraBars.BarButtonItem btnCategorias;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
