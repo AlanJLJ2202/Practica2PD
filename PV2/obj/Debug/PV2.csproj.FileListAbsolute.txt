@@ -97,3 +97,9 @@ C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\ja\DevExpress.Office.v20.1.Core.re
 C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\Dapper.dll
 C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\Dapper.xml
+C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\DAL.dll
+C:\Users\AJLJ-\source\repos\PV2\PV2\bin\Debug\DAL.pdb
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmMain.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmMarcas.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmProductos.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmLogin.resources

@@ -31,14 +31,14 @@ namespace PV2
         {
             this.components = new System.ComponentModel.Container();
             this.gcCategorias = new DevExpress.XtraGrid.GridControl();
-            this.gvCategorias = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.categoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvCategorias = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colidCategoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gcCategorias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvCategorias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCategorias)).BeginInit();
             this.SuspendLayout();
             // 
             // gcCategorias
@@ -53,6 +53,10 @@ namespace PV2
             this.gcCategorias.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvCategorias});
             // 
+            // categoriaBindingSource
+            // 
+            this.categoriaBindingSource.DataSource = typeof(BML.Categoria);
+            // 
             // gvCategorias
             // 
             this.gvCategorias.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -61,14 +65,13 @@ namespace PV2
             this.colactivo});
             this.gvCategorias.GridControl = this.gcCategorias;
             this.gvCategorias.Name = "gvCategorias";
+            this.gvCategorias.OptionsView.ColumnAutoWidth = false;
+            this.gvCategorias.OptionsView.ShowAutoFilterRow = true;
             this.gvCategorias.OptionsView.ShowGroupPanel = false;
-            // 
-            // categoriaBindingSource
-            // 
-            this.categoriaBindingSource.DataSource = typeof(BML.Categoria);
             // 
             // colidCategoria
             // 
+            this.colidCategoria.Caption = "ID";
             this.colidCategoria.FieldName = "idCategoria";
             this.colidCategoria.MinWidth = 25;
             this.colidCategoria.Name = "colidCategoria";
@@ -78,6 +81,7 @@ namespace PV2
             // 
             // coldescripcion
             // 
+            this.coldescripcion.Caption = "Categoria";
             this.coldescripcion.FieldName = "descripcion";
             this.coldescripcion.MinWidth = 25;
             this.coldescripcion.Name = "coldescripcion";
@@ -90,8 +94,6 @@ namespace PV2
             this.colactivo.FieldName = "activo";
             this.colactivo.MinWidth = 25;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Visible = true;
-            this.colactivo.VisibleIndex = 2;
             this.colactivo.Width = 94;
             // 
             // frmCategorias
@@ -104,8 +106,8 @@ namespace PV2
             this.Text = "Categorias";
             this.Load += new System.EventHandler(this.frmCategorias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gcCategorias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvCategorias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCategorias)).EndInit();
             this.ResumeLayout(false);
 
         }

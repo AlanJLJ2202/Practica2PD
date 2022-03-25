@@ -25,6 +25,7 @@ namespace PV2
         private void frmCategorias_Load(object sender, EventArgs e)
         {
             categoriaBindingSource.DataSource = new Categoria().GetAll();
+            gvCategorias.BestFitColumns();
         }
     }
 }

@@ -3,3 +3,7 @@ C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\bin\Debug\DAL.pdb
 C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\obj\Debug\DAL.dll
 C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\obj\Debug\DAL.pdb
+C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\bin\Debug\Dapper.dll
+C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\bin\Debug\Dapper.xml
+C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\AJLJ-\source\repos\PV2\3. DataAccessLayer\DAL\obj\Debug\DAL.csproj.CopyComplete
