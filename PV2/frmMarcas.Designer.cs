@@ -30,26 +30,27 @@ namespace PV2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMarcas));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.gcMarcas = new DevExpress.XtraGrid.GridControl();
-            this.gvMarcas = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colidMarca = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coldescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.gcMarcas = new DevExpress.XtraGrid.GridControl();
+            this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvMarcas = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colidMarca = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcMarcas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -68,42 +69,11 @@ namespace PV2
             this.barButtonItem4});
             this.barManager1.MaxItemId = 4;
             // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(638, 25);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 465);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(638, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 25);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 440);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(638, 25);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 440);
-            // 
             // bar1
             // 
             this.bar1.BarName = "Herramientas";
             this.bar1.DockCol = 0;
+            this.bar1.DockRow = 0;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
@@ -112,68 +82,18 @@ namespace PV2
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.Text = "Herramientas";
             // 
-            // gcMarcas
-            // 
-            this.gcMarcas.DataSource = this.marcaBindingSource;
-            this.gcMarcas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcMarcas.Location = new System.Drawing.Point(0, 25);
-            this.gcMarcas.MainView = this.gvMarcas;
-            this.gcMarcas.MenuManager = this.barManager1;
-            this.gcMarcas.Name = "gcMarcas";
-            this.gcMarcas.Size = new System.Drawing.Size(638, 440);
-            this.gcMarcas.TabIndex = 4;
-            this.gcMarcas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvMarcas});
-            // 
-            // gvMarcas
-            // 
-            this.gvMarcas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colidMarca,
-            this.coldescripcion,
-            this.colactivo});
-            this.gvMarcas.GridControl = this.gcMarcas;
-            this.gvMarcas.Name = "gvMarcas";
-            this.gvMarcas.OptionsView.ShowGroupPanel = false;
-            // 
-            // marcaBindingSource
-            // 
-            this.marcaBindingSource.DataSource = typeof(BML.Marca);
-            // 
-            // colidMarca
-            // 
-            this.colidMarca.FieldName = "idMarca";
-            this.colidMarca.MinWidth = 25;
-            this.colidMarca.Name = "colidMarca";
-            this.colidMarca.Visible = true;
-            this.colidMarca.VisibleIndex = 0;
-            this.colidMarca.Width = 94;
-            // 
-            // coldescripcion
-            // 
-            this.coldescripcion.FieldName = "descripcion";
-            this.coldescripcion.MinWidth = 25;
-            this.coldescripcion.Name = "coldescripcion";
-            this.coldescripcion.Visible = true;
-            this.coldescripcion.VisibleIndex = 1;
-            this.coldescripcion.Width = 94;
-            // 
-            // colactivo
-            // 
-            this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 25;
-            this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 94;
-            // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Actualizar";
             this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "Nuevo";
             this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             // 
             // barButtonItem3
@@ -188,6 +108,94 @@ namespace PV2
             this.barButtonItem4.Id = 3;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(638, 30);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 465);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(638, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 435);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(638, 30);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 435);
+            // 
+            // gcMarcas
+            // 
+            this.gcMarcas.DataSource = this.marcaBindingSource;
+            this.gcMarcas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcMarcas.Location = new System.Drawing.Point(0, 30);
+            this.gcMarcas.MainView = this.gvMarcas;
+            this.gcMarcas.MenuManager = this.barManager1;
+            this.gcMarcas.Name = "gcMarcas";
+            this.gcMarcas.Size = new System.Drawing.Size(638, 435);
+            this.gcMarcas.TabIndex = 4;
+            this.gcMarcas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvMarcas});
+            // 
+            // marcaBindingSource
+            // 
+            this.marcaBindingSource.DataSource = typeof(BML.Marca);
+            // 
+            // gvMarcas
+            // 
+            this.gvMarcas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colidMarca,
+            this.coldescripcion,
+            this.colactivo});
+            this.gvMarcas.GridControl = this.gcMarcas;
+            this.gvMarcas.Name = "gvMarcas";
+            this.gvMarcas.OptionsView.ColumnAutoWidth = false;
+            this.gvMarcas.OptionsView.ShowAutoFilterRow = true;
+            this.gvMarcas.OptionsView.ShowGroupPanel = false;
+            // 
+            // colidMarca
+            // 
+            this.colidMarca.Caption = "ID";
+            this.colidMarca.FieldName = "idMarca";
+            this.colidMarca.MinWidth = 25;
+            this.colidMarca.Name = "colidMarca";
+            this.colidMarca.Visible = true;
+            this.colidMarca.VisibleIndex = 0;
+            this.colidMarca.Width = 94;
+            // 
+            // coldescripcion
+            // 
+            this.coldescripcion.Caption = "Marca";
+            this.coldescripcion.FieldName = "descripcion";
+            this.coldescripcion.MinWidth = 25;
+            this.coldescripcion.Name = "coldescripcion";
+            this.coldescripcion.Visible = true;
+            this.coldescripcion.VisibleIndex = 1;
+            this.coldescripcion.Width = 94;
+            // 
+            // colactivo
+            // 
+            this.colactivo.FieldName = "activo";
+            this.colactivo.MinWidth = 25;
+            this.colactivo.Name = "colactivo";
+            this.colactivo.Width = 94;
+            // 
             // frmMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -198,13 +206,14 @@ namespace PV2
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmMarcas.IconOptions.SvgImage")));
             this.Name = "frmMarcas";
             this.Text = "Marcas";
             this.Load += new System.EventHandler(this.frmMarcas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcMarcas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
