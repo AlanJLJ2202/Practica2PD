@@ -33,5 +33,11 @@ namespace PV2
         {
 
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            main.Show();
+        }
     }
 }

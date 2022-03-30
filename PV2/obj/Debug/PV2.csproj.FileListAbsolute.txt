@@ -103,3 +103,4 @@ C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmMain.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmMarcas.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmProductos.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmLogin.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmUsuarios.resources

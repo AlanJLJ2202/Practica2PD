@@ -47,6 +47,7 @@ namespace PV2
             this.barToolbarsListItem1 = new DevExpress.XtraBars.BarToolbarsListItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -72,8 +73,9 @@ namespace PV2
             this.btnProductos,
             this.btnMarcas,
             this.btnCategorias,
-            this.barButtonItem1});
-            this.barManager1.MaxItemId = 9;
+            this.barButtonItem1,
+            this.btnUsuarios});
+            this.barManager1.MaxItemId = 10;
             this.barManager1.OptionsStubGlyphs.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Black;
             // 
             // bar1
@@ -122,7 +124,8 @@ namespace PV2
             this.barSubItem3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnProductos, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnMarcas, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCategorias, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCategorias, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnUsuarios, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.barSubItem3.Name = "barSubItem3";
             this.barSubItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -140,6 +143,7 @@ namespace PV2
             this.btnMarcas.Id = 6;
             this.btnMarcas.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMarcas.ImageOptions.SvgImage")));
             this.btnMarcas.Name = "btnMarcas";
+            this.btnMarcas.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarcas_ItemClick);
             // 
             // btnCategorias
             // 
@@ -209,6 +213,14 @@ namespace PV2
             this.xtraTabbedMdiManager1.Appearance.Options.UseBorderColor = true;
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Caption = "Usuarios";
+            this.btnUsuarios.Id = 9;
+            this.btnUsuarios.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUsuarios.ImageOptions.SvgImage")));
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUsuarios_ItemClick);
+            // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.White;
@@ -257,5 +269,6 @@ namespace PV2
         private DevExpress.XtraBars.BarButtonItem btnCategorias;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnUsuarios;
     }
 }

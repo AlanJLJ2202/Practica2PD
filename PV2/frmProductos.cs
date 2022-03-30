@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BML;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,8 @@ namespace PV2
 
         private void frmProductos_Load(object sender, EventArgs e)
         {
-
+            productoBindingSource.DataSource = new Producto().GetAll();
+            gvProductos.BestFitColumns();
         }
     }
 }

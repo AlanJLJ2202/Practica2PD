@@ -43,7 +43,38 @@ namespace PV2
 
         private void btnProductos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            foreach (Form form in Application.OpenForms)
 
+                if (form.GetType() == typeof(frmProductos))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmProductos { MdiParent = this }.Show();
+        }
+
+        private void btnMarcas_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmMarcas))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmMarcas { MdiParent = this }.Show();
+        }
+
+        private void btnUsuarios_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmUsuarios))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmUsuarios { MdiParent = this }.Show();
         }
     }
 }
