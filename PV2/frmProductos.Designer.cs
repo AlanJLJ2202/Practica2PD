@@ -86,6 +86,7 @@ namespace PV2
             // 
             // barManager1
             // 
+            this.barManager1.AllowQuickCustomization = false;
             this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
             this.bar1});
             this.barManager1.DockControls.Add(this.barDockControl2);

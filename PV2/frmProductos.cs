@@ -23,6 +23,8 @@ namespace PV2
         private void frmProductos_Load(object sender, EventArgs e)
         {
             productoBindingSource.DataSource = new Producto().GetAll();
+            categoriaBindingSource.DataSource = new Categoria().GetAll();
+            marcaBindingSource.DataSource = new Marca().GetAll();
             gvProductos.BestFitColumns();
         }
     }

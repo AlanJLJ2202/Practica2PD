@@ -12,7 +12,6 @@ namespace BML
     public class Categoria
     {
         public DataAccess dataAccess = DataAccess.Instance();
-
         public int idCategoria { get; set; }
         public string descripcion { get; set; }
 
@@ -45,12 +44,10 @@ namespace BML
             return dataAccess.Execute("stp_categorias_update", parameters);
         }
 
-
         public IEnumerable<Categoria> GetAll()
         {
             return dataAccess.Query<Categoria>("stp_categorias_getall");
         }
-
 
         public Categoria GetById()
         {

@@ -28,8 +28,6 @@ namespace DAL
 
         }
 
-        
-
         public static DataAccess Instance()
         {
             if (instance == null)

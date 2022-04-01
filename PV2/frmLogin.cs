@@ -48,7 +48,8 @@ namespace PV2
                 string con = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(con))
                 {
-                    using (SqlCommand cmd = new SqlCommand("SELECT nombre, password FROM usuarios where='" + txtUsuario.Text + "' AND password='" + txtClave.Text + "'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT nombre, password FROM usuarios where='" 
+                                                           + txtUsuario.Text + "' AND password='" + txtClave.Text + "'", conexion))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
