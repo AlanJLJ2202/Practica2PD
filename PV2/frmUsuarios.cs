@@ -24,5 +24,7 @@ namespace PV2
             usuarioBindingSource.DataSource = new Usuario().GetAll();
             gvUsuarios.BestFitColumns();
         }
+
+
     }
 }

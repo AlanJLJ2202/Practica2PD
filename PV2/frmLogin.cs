@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BML;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,10 @@ namespace PV2
 {
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
+
+        Usuario usuario = new Usuario();
+        string nombre = "";
+        string password = "";
         public frmLogin()
         {
             InitializeComponent();
@@ -43,36 +48,52 @@ namespace PV2
 
         public void Login()
         {
-            try
-            {
-                string con = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-                using (SqlConnection conexion = new SqlConnection(con))
-                {
-                    using (SqlCommand cmd = new SqlCommand("SELECT nombre, password FROM usuarios where='" 
-                                                           + txtUsuario.Text + "' AND password='" + txtClave.Text + "'", conexion))
-                    {
-                        SqlDataReader dr = cmd.ExecuteReader();
-                        if (dr.Read())
-                        {
-                            MessageBox.Show("Login Exitoso");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Login Fallido");
-                        }
-                    }
-                }
-            }
-            catch(Exception Ex)
+            
+
+            if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtClave.Text))
             {
 
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
             }
-        }
 
+            
+            if(new Usuario()
+            {
+                nombre = txtUsuario.Text,
+                password = txtClave.Text
+            }.Login() != null)
+            {
+                
+                MessageBox.Show("Ingreso correctamente");
+                this.Hide();
+                new frmMain { Text = "Principal" }.ShowDialog();
+                this.Show();
+               
+            }
+            else
+            {
+                MessageBox.Show("No pudiste ingresar");
+            }
 
+            }
+
+         
+            
+    
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+           
+        }
+
+        private void Clean()
+        {
+            txtUsuario.Text = "";
+            txtClave.Text = "";
+            txtUsuario.Focus();
         }
     }
 }

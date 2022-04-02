@@ -2,6 +2,8 @@
 using Dapper;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,8 @@ namespace BML
 
         public Usuario() { }
 
+     
+       
         public int Add()
         {
             var parameters = new DynamicParameters();
@@ -57,6 +61,15 @@ namespace BML
             var parameters = new DynamicParameters();
             parameters.Add("@idUsuario", idUsuario);
             return dataAccess.QuerySingle<Usuario>("stp_usuarios_getbyid", parameters);
+        }
+
+
+        public Usuario Login()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@nombre", nombre);
+            parameters.Add("@password", password);
+            return dataAccess.QuerySingleOrDefault<Usuario>("stp_usuarios_login", parameters);
         }
 
     }

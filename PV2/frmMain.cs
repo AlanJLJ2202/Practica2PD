@@ -39,6 +39,7 @@ namespace PV2
         private void btnSalir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Dispose();
+
         }
 
         private void btnProductos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -75,6 +76,11 @@ namespace PV2
                     return;
                 }
             new frmUsuarios { MdiParent = this }.Show();
+        }
+
+        private void barCatalogo_PaintMenuBar(object sender, DevExpress.XtraBars.BarCustomDrawEventArgs e)
+        {
+            
         }
     }
 }

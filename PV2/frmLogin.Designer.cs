@@ -29,7 +29,6 @@ namespace PV2
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,13 +36,11 @@ namespace PV2
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
             this.txtClave = new DevExpress.XtraEditors.TextEdit();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.btnIngresar = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClave.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // svgImageBox1
@@ -92,16 +89,19 @@ namespace PV2
             this.txtUsuario.Location = new System.Drawing.Point(105, 179);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.txtUsuario.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsuario.Size = new System.Drawing.Size(220, 24);
-            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TabIndex = 1;
             // 
             // txtClave
             // 
             this.txtClave.Location = new System.Drawing.Point(105, 248);
             this.txtClave.Name = "txtClave";
             this.txtClave.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.txtClave.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtClave.Properties.PasswordChar = 'X';
             this.txtClave.Size = new System.Drawing.Size(220, 24);
-            this.txtClave.TabIndex = 5;
+            this.txtClave.TabIndex = 2;
             // 
             // btnIngresar
             // 
@@ -111,7 +111,7 @@ namespace PV2
             this.btnIngresar.Location = new System.Drawing.Point(27, 307);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(139, 48);
-            this.btnIngresar.TabIndex = 6;
+            this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
@@ -119,16 +119,18 @@ namespace PV2
             // 
             this.btnCancelar.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Appearance.Options.UseFont = true;
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
             this.btnCancelar.Location = new System.Drawing.Point(186, 307);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 48);
-            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnIngresar;
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Appearance.BackColor2 = System.Drawing.Color.RoyalBlue;
             this.Appearance.BorderColor = System.Drawing.SystemColors.Window;
@@ -138,6 +140,7 @@ namespace PV2
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(346, 380);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
@@ -155,7 +158,6 @@ namespace PV2
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClave.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,7 +170,6 @@ namespace PV2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit txtUsuario;
-        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.TextEdit txtClave;
         private DevExpress.XtraEditors.SimpleButton btnIngresar;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
