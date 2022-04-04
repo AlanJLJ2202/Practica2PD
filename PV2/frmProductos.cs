@@ -27,5 +27,29 @@ namespace PV2
             marcaBindingSource.DataSource = new Marca().GetAll();
             gvProductos.BestFitColumns();
         }
+
+        private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmNProducto))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmNProducto { Text = "Productos" }.Show();
+            btnActualizar.PerformClick();
+        }
+
+        private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new frmNProducto((int)gvProductos.GetFocusedRowCellValue("idProducto")) { Text = "Productos" }.ShowDialog();
+            btnActualizar.PerformClick();
+        }
+
+        private void btnActualizar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            productoBindingSource.DataSource = new Producto().GetAll();
+        }
     }
 }

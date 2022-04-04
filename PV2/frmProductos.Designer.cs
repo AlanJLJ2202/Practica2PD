@@ -120,6 +120,7 @@ namespace PV2
             this.btnActualizar.Id = 0;
             this.btnActualizar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnActualizar.ImageOptions.SvgImage")));
             this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActualizar_ItemClick);
             // 
             // btnNuevo
             // 
@@ -127,6 +128,7 @@ namespace PV2
             this.btnNuevo.Id = 1;
             this.btnNuevo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNuevo.ImageOptions.SvgImage")));
             this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevo_ItemClick);
             // 
             // btnModificar
             // 
@@ -134,6 +136,7 @@ namespace PV2
             this.btnModificar.Id = 2;
             this.btnModificar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnModificar.ImageOptions.SvgImage")));
             this.btnModificar.Name = "btnModificar";
+            this.btnModificar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModificar_ItemClick);
             // 
             // btnEliminar
             // 
@@ -218,6 +221,7 @@ namespace PV2
             this.colidProducto.FieldName = "idProducto";
             this.colidProducto.MinWidth = 25;
             this.colidProducto.Name = "colidProducto";
+            this.colidProducto.OptionsColumn.AllowMove = false;
             this.colidProducto.Visible = true;
             this.colidProducto.VisibleIndex = 0;
             this.colidProducto.Width = 94;

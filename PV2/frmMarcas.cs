@@ -24,5 +24,17 @@ namespace PV2
             marcaBindingSource.DataSource = new Marca().GetAll();
             gvMarcas.BestFitColumns();
         }
+
+        private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmNMarca))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmNMarca { Text = "Nueva Marca" }.Show();
+        }
     }
 }

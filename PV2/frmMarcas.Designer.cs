@@ -57,10 +57,10 @@ namespace PV2
             // 
             this.gcMarcas.DataSource = this.marcaBindingSource;
             this.gcMarcas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcMarcas.Location = new System.Drawing.Point(0, 0);
+            this.gcMarcas.Location = new System.Drawing.Point(0, 30);
             this.gcMarcas.MainView = this.gvMarcas;
             this.gcMarcas.Name = "gcMarcas";
-            this.gcMarcas.Size = new System.Drawing.Size(638, 465);
+            this.gcMarcas.Size = new System.Drawing.Size(638, 435);
             this.gcMarcas.TabIndex = 4;
             this.gcMarcas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvMarcas});
@@ -150,6 +150,7 @@ namespace PV2
             this.btnNuevo.Id = 1;
             this.btnNuevo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNuevo.ImageOptions.SvgImage")));
             this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevo_ItemClick);
             // 
             // btnModificar
             // 
@@ -202,11 +203,11 @@ namespace PV2
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 465);
+            this.Controls.Add(this.gcMarcas);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Controls.Add(this.gcMarcas);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmMarcas.IconOptions.SvgImage")));
             this.Name = "frmMarcas";
             this.Text = "Marcas";

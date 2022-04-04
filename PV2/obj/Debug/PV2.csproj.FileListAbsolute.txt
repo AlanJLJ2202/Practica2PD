@@ -106,3 +106,4 @@ C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmLogin.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmUsuarios.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNCategoria.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNMarca.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNProducto.resources

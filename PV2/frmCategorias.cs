@@ -27,5 +27,47 @@ namespace PV2
             categoriaBindingSource.DataSource = new Categoria().GetAll();
             gvCategorias.BestFitColumns();
         }
+
+        private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmNCategoria))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmNCategoria { Text = "Nueva Categoria" }.Show();
+            btnActualizar.PerformClick();
+        }
+
+        private void btnActualizar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            categoriaBindingSource.DataSource = new Categoria().GetAll();
+        }
+
+        private void btnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int idCategoria = (int)gvCategorias.GetFocusedRowCellValue("idCategoria");
+
+            if (new Categoria()
+            {
+                idCategoria = idCategoria
+            }.Delete() > 0)
+            {
+                XtraMessageBox.Show("Categoria eliminada correctamente", Application.ProductName,
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnActualizar.PerformClick();
+            }
+            else
+                XtraMessageBox.Show("No se elimino correctamente", Application.ProductName,
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new frmNCategoria((int)gvCategorias.GetFocusedRowCellValue("idCategoria")) { Text = "Categorias" }.ShowDialog();
+            btnActualizar.PerformClick();
+        }
     }
 }

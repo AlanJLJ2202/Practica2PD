@@ -77,6 +77,7 @@ namespace PV2
             this.colactivo});
             this.gvCategorias.GridControl = this.gcCategorias;
             this.gvCategorias.Name = "gvCategorias";
+            this.gvCategorias.OptionsBehavior.Editable = false;
             this.gvCategorias.OptionsView.ColumnAutoWidth = false;
             this.gvCategorias.OptionsView.ShowAutoFilterRow = true;
             this.gvCategorias.OptionsView.ShowGroupPanel = false;
@@ -87,6 +88,7 @@ namespace PV2
             this.colidCategoria.FieldName = "idCategoria";
             this.colidCategoria.MinWidth = 25;
             this.colidCategoria.Name = "colidCategoria";
+            this.colidCategoria.OptionsColumn.AllowMove = false;
             this.colidCategoria.Visible = true;
             this.colidCategoria.VisibleIndex = 0;
             this.colidCategoria.Width = 94;
@@ -144,6 +146,7 @@ namespace PV2
             this.btnActualizar.Id = 0;
             this.btnActualizar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnActualizar.ImageOptions.SvgImage")));
             this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActualizar_ItemClick);
             // 
             // btnNuevo
             // 
@@ -151,6 +154,7 @@ namespace PV2
             this.btnNuevo.Id = 1;
             this.btnNuevo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNuevo.ImageOptions.SvgImage")));
             this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevo_ItemClick);
             // 
             // btnModificar
             // 
@@ -158,6 +162,7 @@ namespace PV2
             this.btnModificar.Id = 2;
             this.btnModificar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnModificar.ImageOptions.SvgImage")));
             this.btnModificar.Name = "btnModificar";
+            this.btnModificar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModificar_ItemClick);
             // 
             // btnEliminar
             // 
@@ -165,6 +170,7 @@ namespace PV2
             this.btnEliminar.Id = 3;
             this.btnEliminar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnEliminar.ImageOptions.SvgImage")));
             this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEliminar_ItemClick);
             // 
             // barDockControlTop
             // 
