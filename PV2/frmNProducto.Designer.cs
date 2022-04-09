@@ -31,8 +31,6 @@ namespace PV2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNProducto));
-            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAceptar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -47,6 +45,8 @@ namespace PV2
             this.categoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbMarcas = new DevExpress.XtraEditors.LookUpEdit();
             this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAceptar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrecio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStock.Properties)).BeginInit();
@@ -56,26 +56,6 @@ namespace PV2
             ((System.ComponentModel.ISupportInitialize)(this.cbMarcas.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Appearance.Options.UseFont = true;
-            this.btnCancelar.Location = new System.Drawing.Point(228, 356);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(94, 29);
-            this.btnCancelar.TabIndex = 11;
-            this.btnCancelar.Text = "Cancelar";
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Appearance.Options.UseFont = true;
-            this.btnAceptar.Location = new System.Drawing.Point(58, 356);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(94, 29);
-            this.btnAceptar.TabIndex = 10;
-            this.btnAceptar.Text = "Aceptar";
             // 
             // labelControl1
             // 
@@ -98,7 +78,7 @@ namespace PV2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(29, 180);
+            this.labelControl2.Location = new System.Drawing.Point(29, 94);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(76, 21);
             this.labelControl2.TabIndex = 13;
@@ -106,7 +86,7 @@ namespace PV2
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(128, 181);
+            this.txtPrecio.Location = new System.Drawing.Point(128, 95);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(194, 22);
             this.txtPrecio.TabIndex = 12;
@@ -115,7 +95,7 @@ namespace PV2
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(46, 228);
+            this.labelControl3.Location = new System.Drawing.Point(46, 142);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(49, 21);
             this.labelControl3.TabIndex = 15;
@@ -123,7 +103,7 @@ namespace PV2
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(128, 232);
+            this.txtStock.Location = new System.Drawing.Point(128, 146);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(194, 22);
             this.txtStock.TabIndex = 14;
@@ -132,7 +112,7 @@ namespace PV2
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(46, 287);
+            this.labelControl4.Location = new System.Drawing.Point(37, 204);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(60, 21);
             this.labelControl4.TabIndex = 17;
@@ -140,7 +120,7 @@ namespace PV2
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(128, 291);
+            this.txtCodigo.Location = new System.Drawing.Point(128, 205);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(194, 22);
             this.txtCodigo.TabIndex = 16;
@@ -149,7 +129,7 @@ namespace PV2
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(46, 134);
+            this.labelControl6.Location = new System.Drawing.Point(46, 306);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(51, 21);
             this.labelControl6.TabIndex = 21;
@@ -159,7 +139,7 @@ namespace PV2
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(15, 83);
+            this.labelControl7.Location = new System.Drawing.Point(15, 255);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(82, 21);
             this.labelControl7.TabIndex = 20;
@@ -167,7 +147,7 @@ namespace PV2
             // 
             // cbCategoria
             // 
-            this.cbCategoria.Location = new System.Drawing.Point(128, 84);
+            this.cbCategoria.Location = new System.Drawing.Point(128, 256);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -189,7 +169,7 @@ namespace PV2
             // 
             // cbMarcas
             // 
-            this.cbMarcas.Location = new System.Drawing.Point(128, 135);
+            this.cbMarcas.Location = new System.Drawing.Point(128, 307);
             this.cbMarcas.Name = "cbMarcas";
             this.cbMarcas.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -209,11 +189,39 @@ namespace PV2
             // 
             this.marcaBindingSource.DataSource = typeof(BML.Marca);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Appearance.Options.UseFont = true;
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnCancelar.Location = new System.Drawing.Point(210, 374);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(125, 29);
+            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Appearance.Options.UseFont = true;
+            this.btnAceptar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnAceptar.Location = new System.Drawing.Point(37, 374);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(125, 29);
+            this.btnAceptar.TabIndex = 24;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // frmNProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 426);
+            this.CancelButton = this.btnCancelar;
+            this.ClientSize = new System.Drawing.Size(370, 441);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl4);
@@ -222,13 +230,13 @@ namespace PV2
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarcas);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNProducto.IconOptions.SvgImage")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmNProducto";
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.frmNProducto_Load);
@@ -246,9 +254,6 @@ namespace PV2
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.SimpleButton btnCancelar;
-        private DevExpress.XtraEditors.SimpleButton btnAceptar;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txtNombre;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -263,5 +268,7 @@ namespace PV2
         private System.Windows.Forms.BindingSource categoriaBindingSource;
         private DevExpress.XtraEditors.LookUpEdit cbMarcas;
         private System.Windows.Forms.BindingSource marcaBindingSource;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnAceptar;
     }
 }

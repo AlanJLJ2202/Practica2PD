@@ -42,5 +42,23 @@ namespace PV2
             categoriaBindingSource.DataSource = new Categoria().GetAll();
             marcaBindingSource.DataSource = new Marca().GetAll();
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtPrecio.Text) || string.IsNullOrEmpty(txtStock.Text)
+                || string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(cbCategoria.Text) || string.IsNullOrEmpty(cbMarcas.Text))
+            {
+
+                XtraMessageBox.Show("Debe completar la informacion", "Error 404");
+
+                return;
+
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
