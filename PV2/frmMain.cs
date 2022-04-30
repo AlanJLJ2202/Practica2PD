@@ -82,5 +82,17 @@ namespace PV2
         {
             
         }
+
+        private void btnClientes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmClientes))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmClientes { MdiParent = this }.Show();
+        }
     }
 }

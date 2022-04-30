@@ -63,6 +63,12 @@
     <Compile Include="frmCategorias.Designer.cs">
       <DependentUpon>frmCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="frmNCategoria.Designer.cs">
       <DependentUpon>frmNCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCliente.Designer.cs">
+      <DependentUpon>frmNCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNMarca.cs">
       <SubType>Form</SubType>
@@ -111,10 +123,19 @@
     <Compile Include="frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCategorias.resx">
       <DependentUpon>frmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -128,6 +149,9 @@
     <EmbeddedResource Include="frmNCategoria.resx">
       <DependentUpon>frmNCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNCliente.resx">
+      <DependentUpon>frmNCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNMarca.resx">
       <DependentUpon>frmNMarca.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,9 +179,11 @@
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\DataSources\BML.Categoria.datasource" />
+    <None Include="Properties\DataSources\BML.Cliente.datasource" />
     <None Include="Properties\DataSources\BML.Marca.datasource" />
     <None Include="Properties\DataSources\BML.Producto.datasource" />
     <None Include="Properties\DataSources\BML.Usuario.datasource" />
+    <None Include="Properties\DataSources\BML.Ventas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -63,6 +63,13 @@ namespace BML
             return dataAccess.Execute("stp_ventas_delete", parameters);
         }
 
+        public int Cancel()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@idVenta", idVenta);
+            return dataAccess.Execute("stp_ventas_cancel", parameters);
+        }
+
 
         public int Update()
         {

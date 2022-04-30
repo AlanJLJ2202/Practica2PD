@@ -19,6 +19,7 @@ namespace PV2
         public frmNProducto()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         public frmNProducto(int idProducto)

@@ -48,6 +48,7 @@ namespace PV2
             this.barToolbarsListItem1 = new DevExpress.XtraBars.BarToolbarsListItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnClientes = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -74,8 +75,9 @@ namespace PV2
             this.btnMarcas,
             this.btnCategorias,
             this.barButtonItem1,
-            this.btnUsuarios});
-            this.barManager1.MaxItemId = 10;
+            this.btnUsuarios,
+            this.btnClientes});
+            this.barManager1.MaxItemId = 11;
             this.barManager1.OptionsStubGlyphs.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Black;
             // 
             // bar1
@@ -122,12 +124,13 @@ namespace PV2
             this.barCatalogo.Border = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.barCatalogo.Caption = "Catalogo";
             this.barCatalogo.Id = 3;
-            this.barCatalogo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem3.ImageOptions.SvgImage")));
+            this.barCatalogo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barCatalogo.ImageOptions.SvgImage")));
             this.barCatalogo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnProductos, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnMarcas, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCategorias, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnUsuarios, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnUsuarios, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnClientes, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.barCatalogo.Name = "barCatalogo";
             this.barCatalogo.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.barCatalogo.PaintMenuBar += new DevExpress.XtraBars.BarCustomDrawEventHandler(this.barCatalogo_PaintMenuBar);
@@ -225,6 +228,14 @@ namespace PV2
             this.xtraTabbedMdiManager1.Appearance.Options.UseBorderColor = true;
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // btnClientes
+            // 
+            this.btnClientes.Caption = "Clientes";
+            this.btnClientes.Id = 10;
+            this.btnClientes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClientes.ImageOptions.SvgImage")));
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnClientes_ItemClick);
+            // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.White;
@@ -274,5 +285,6 @@ namespace PV2
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btnUsuarios;
+        private DevExpress.XtraBars.BarButtonItem btnClientes;
     }
 }

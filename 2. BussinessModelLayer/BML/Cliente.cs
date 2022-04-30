@@ -16,15 +16,17 @@ namespace BML
 
         public string nombre { get; set; }
 
-        public string apMaterno { get; set; }
-
         public string apPaterno { get; set; }
+
+        public string apMaterno { get; set; }
 
         public string direccion { get; set; }
 
         public string telefono { get; set; }
 
-        public string cp { get; set; }
+        public int cp { get; set; }
+
+        public string codigo { get; set; }
 
         public bool activo { get; set; }
 
@@ -41,6 +43,7 @@ namespace BML
             parameters.Add("@direccion", direccion);
             parameters.Add("@telefono", telefono);
             parameters.Add("@cp", cp);
+            parameters.Add("@codigo", codigo);
             return dataAccess.Execute("stp_clientes_add", parameters);
         }
 
@@ -54,6 +57,8 @@ namespace BML
         }
 
 
+
+
         public int Update()
         {
             var parameters = new DynamicParameters();
@@ -64,6 +69,7 @@ namespace BML
             parameters.Add("@direccion", direccion);
             parameters.Add("@telefono", telefono);
             parameters.Add("@cp", cp);
+            parameters.Add("@codigo", codigo);
             return dataAccess.Execute("stp_clientes_update", parameters);
         }
 
