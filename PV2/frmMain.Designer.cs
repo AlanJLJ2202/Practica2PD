@@ -41,6 +41,7 @@ namespace PV2
             this.btnMarcas = new DevExpress.XtraBars.BarButtonItem();
             this.btnCategorias = new DevExpress.XtraBars.BarButtonItem();
             this.btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
+            this.btnClientes = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -48,7 +49,6 @@ namespace PV2
             this.barToolbarsListItem1 = new DevExpress.XtraBars.BarToolbarsListItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnClientes = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -167,6 +167,14 @@ namespace PV2
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUsuarios_ItemClick);
             // 
+            // btnClientes
+            // 
+            this.btnClientes.Caption = "Clientes";
+            this.btnClientes.Id = 10;
+            this.btnClientes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClientes.ImageOptions.SvgImage")));
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnClientes_ItemClick);
+            // 
             // barDockControlTop
             // 
             this.barDockControlTop.Appearance.BackColor = System.Drawing.Color.Black;
@@ -227,14 +235,6 @@ namespace PV2
             this.xtraTabbedMdiManager1.Appearance.Options.UseBackColor = true;
             this.xtraTabbedMdiManager1.Appearance.Options.UseBorderColor = true;
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.Caption = "Clientes";
-            this.btnClientes.Id = 10;
-            this.btnClientes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClientes.ImageOptions.SvgImage")));
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnClientes_ItemClick);
             // 
             // frmMain
             // 

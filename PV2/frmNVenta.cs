@@ -11,16 +11,11 @@ using System.Windows.Forms;
 
 namespace PV2
 {
-    public partial class frmNMarca : DevExpress.XtraEditors.XtraForm
+    public partial class frmNVenta : DevExpress.XtraEditors.XtraForm
     {
-        public frmNMarca()
+        public frmNVenta()
         {
             InitializeComponent();
-        }
-
-        private void frmNMarca_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

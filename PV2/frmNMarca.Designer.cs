@@ -86,6 +86,7 @@ namespace PV2
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNMarca.IconOptions.SvgImage")));
             this.Name = "frmNMarca";
             this.Text = "Marcas";
+            this.Load += new System.EventHandler(this.frmNMarca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

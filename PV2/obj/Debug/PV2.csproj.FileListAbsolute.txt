@@ -110,3 +110,4 @@ C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNProducto.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmClientes.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNCliente.resources
 C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmVentas.resources
+C:\Users\AJLJ-\source\repos\PV2\PV2\obj\Debug\PV2.frmNVenta.resources

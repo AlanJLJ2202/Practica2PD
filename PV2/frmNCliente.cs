@@ -49,14 +49,49 @@ namespace PV2
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApaterno.Text) || string.IsNullOrEmpty(txtAmaterno.Text)
+           /* if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApaterno.Text) || string.IsNullOrEmpty(txtAmaterno.Text)
                || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtTelefono.Text) || string.IsNullOrEmpty(txtCodigo.Text))
             {
-
                 MessageBox.Show("Debe completar la informacion");
-
                 return;
+            } */
 
+
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en el Nombre");
+                txtNombre.Focus();
+                return;
+            } 
+            else if (string.IsNullOrEmpty(txtApaterno.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en Apellido paterno");
+                txtApaterno.Focus();
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtAmaterno.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en Apellido materno");
+                txtAmaterno.Focus();
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtDireccion.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en Direccion");
+                txtDireccion.Focus();
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en Telefono");
+                txtTelefono.Focus();
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtCodigo.Text))
+            {
+                MessageBox.Show("Debe completar la informacion en Codigo");
+                txtCodigo.Focus();
+                return;
             }
 
             if (idCliente > 0)
