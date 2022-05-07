@@ -19,6 +19,8 @@ namespace BML
 
         public DateTime fecha { get; set; }
 
+        public int idProducto { get; set; }
+
         public int cantidad { get; set; }
 
         public decimal importe { get; set; }
@@ -44,6 +46,7 @@ namespace BML
             var parameters = new DynamicParameters();
             parameters.Add("@folio", folio);
             parameters.Add("@fecha", fecha);
+            parameters.Add("@idProducto", idProducto);
             parameters.Add("@cantidad", cantidad);
             parameters.Add("@importe", importe);
             parameters.Add("@descuento", descuento);
@@ -77,6 +80,7 @@ namespace BML
             parameters.Add("@idVenta", idVenta);
             parameters.Add("@folio", folio);
             parameters.Add("@fecha", fecha);
+            parameters.Add("@idProducto", idProducto);
             parameters.Add("@cantidad", cantidad);
             parameters.Add("@importe", importe);
             parameters.Add("@descuento", descuento);

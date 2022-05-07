@@ -94,5 +94,22 @@ namespace PV2
                 }
             new frmClientes { MdiParent = this }.Show();
         }
+
+        private void btnVentas_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmNVenta))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmNVenta { MdiParent = this }.Show();
+        }
+
+        private void btnCajero_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+        }
     }
 }

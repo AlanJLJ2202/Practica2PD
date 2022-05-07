@@ -18,7 +18,7 @@ namespace PV2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNVenta());
+            Application.Run(new frmMain());
         }
     }
 }

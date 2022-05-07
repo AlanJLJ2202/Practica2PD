@@ -49,6 +49,8 @@ namespace PV2
             this.barToolbarsListItem1 = new DevExpress.XtraBars.BarToolbarsListItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnVentas = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCajero = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -76,8 +78,10 @@ namespace PV2
             this.btnCategorias,
             this.barButtonItem1,
             this.btnUsuarios,
-            this.btnClientes});
-            this.barManager1.MaxItemId = 11;
+            this.btnClientes,
+            this.btnVentas,
+            this.btnCajero});
+            this.barManager1.MaxItemId = 13;
             this.barManager1.OptionsStubGlyphs.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Black;
             // 
             // bar1
@@ -130,7 +134,9 @@ namespace PV2
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnMarcas, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCategorias, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnUsuarios, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnClientes, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnClientes, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnVentas, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCajero, "", false, true, false, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.barCatalogo.Name = "barCatalogo";
             this.barCatalogo.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.barCatalogo.PaintMenuBar += new DevExpress.XtraBars.BarCustomDrawEventHandler(this.barCatalogo_PaintMenuBar);
@@ -188,16 +194,16 @@ namespace PV2
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(821, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(996, 31);
             this.barDockControlTop.MouseHover += new System.EventHandler(this.frmMain_Load);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 632);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 715);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(821, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(996, 0);
             // 
             // barDockControlLeft
             // 
@@ -205,15 +211,15 @@ namespace PV2
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 601);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 684);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(821, 31);
+            this.barDockControlRight.Location = new System.Drawing.Point(996, 31);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 601);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 684);
             // 
             // barToolbarsListItem1
             // 
@@ -236,6 +242,22 @@ namespace PV2
             this.xtraTabbedMdiManager1.Appearance.Options.UseBorderColor = true;
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // btnVentas
+            // 
+            this.btnVentas.Caption = "Ventas";
+            this.btnVentas.Id = 11;
+            this.btnVentas.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVentas.ImageOptions.SvgImage")));
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVentas_ItemClick);
+            // 
+            // btnCajero
+            // 
+            this.btnCajero.Caption = "Cajeros";
+            this.btnCajero.Id = 12;
+            this.btnCajero.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCajero.ImageOptions.SvgImage")));
+            this.btnCajero.Name = "btnCajero";
+            this.btnCajero.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCajero_ItemClick);
+            // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.White;
@@ -245,7 +267,7 @@ namespace PV2
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 632);
+            this.ClientSize = new System.Drawing.Size(996, 715);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -286,5 +308,7 @@ namespace PV2
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btnUsuarios;
         private DevExpress.XtraBars.BarButtonItem btnClientes;
+        private DevExpress.XtraBars.BarButtonItem btnVentas;
+        private DevExpress.XtraBars.BarButtonItem btnCajero;
     }
 }

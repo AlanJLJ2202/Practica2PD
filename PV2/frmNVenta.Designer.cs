@@ -30,17 +30,11 @@ namespace PV2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNVenta));
             this.pcVentas = new DevExpress.XtraEditors.PanelControl();
             this.gcVentas = new DevExpress.XtraGrid.GridControl();
-            this.gvVentas = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtCodigo = new DevExpress.XtraEditors.TextEdit();
-            this.checkMayoreo = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.cbCajero = new DevExpress.XtraEditors.LookUpEdit();
             this.ventasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvVentas = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colidVenta = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfolio = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfecha = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -52,18 +46,26 @@ namespace PV2
             this.colidCliente = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colidUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtCodigo = new DevExpress.XtraEditors.TextEdit();
+            this.checkMayoreo = new DevExpress.XtraEditors.CheckEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.cbCajero = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.btnIngresar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pcVentas)).BeginInit();
             this.pcVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkMayoreo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbCajero.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pcVentas
@@ -86,6 +88,10 @@ namespace PV2
             this.gcVentas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvVentas});
             // 
+            // ventasBindingSource
+            // 
+            this.ventasBindingSource.DataSource = typeof(BML.Ventas);
+            // 
             // gvVentas
             // 
             this.gvVentas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -104,67 +110,6 @@ namespace PV2
             this.gvVentas.Name = "gvVentas";
             this.gvVentas.OptionsView.ShowAutoFilterRow = true;
             this.gvVentas.OptionsView.ShowGroupPanel = false;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(42, 13);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(48, 16);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Cliente: ";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(42, 62);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(48, 16);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Codigo: ";
-            // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(97, 13);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(222, 22);
-            this.lookUpEdit1.TabIndex = 3;
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(97, 62);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(222, 22);
-            this.txtCodigo.TabIndex = 4;
-            // 
-            // checkMayoreo
-            // 
-            this.checkMayoreo.Location = new System.Drawing.Point(356, 16);
-            this.checkMayoreo.Name = "checkMayoreo";
-            this.checkMayoreo.Properties.Caption = "Mayoreo";
-            this.checkMayoreo.Size = new System.Drawing.Size(94, 24);
-            this.checkMayoreo.TabIndex = 5;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(680, 24);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(47, 16);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Cajero: ";
-            // 
-            // cbCajero
-            // 
-            this.cbCajero.Location = new System.Drawing.Point(733, 21);
-            this.cbCajero.Name = "cbCajero";
-            this.cbCajero.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbCajero.Size = new System.Drawing.Size(222, 22);
-            this.cbCajero.TabIndex = 7;
-            // 
-            // ventasBindingSource
-            // 
-            this.ventasBindingSource.DataSource = typeof(BML.Ventas);
             // 
             // colidVenta
             // 
@@ -273,6 +218,63 @@ namespace PV2
             this.colactivo.Name = "colactivo";
             this.colactivo.Width = 94;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(42, 13);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(48, 16);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Cliente: ";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(42, 62);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(48, 16);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Codigo: ";
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(97, 13);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(222, 22);
+            this.lookUpEdit1.TabIndex = 3;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(97, 62);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(222, 22);
+            this.txtCodigo.TabIndex = 4;
+            // 
+            // checkMayoreo
+            // 
+            this.checkMayoreo.Location = new System.Drawing.Point(356, 16);
+            this.checkMayoreo.Name = "checkMayoreo";
+            this.checkMayoreo.Properties.Caption = "Mayoreo";
+            this.checkMayoreo.Size = new System.Drawing.Size(94, 24);
+            this.checkMayoreo.TabIndex = 5;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(680, 24);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(47, 16);
+            this.labelControl3.TabIndex = 6;
+            this.labelControl3.Text = "Cajero: ";
+            // 
+            // cbCajero
+            // 
+            this.cbCajero.Location = new System.Drawing.Point(733, 21);
+            this.cbCajero.Name = "cbCajero";
+            this.cbCajero.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbCajero.Size = new System.Drawing.Size(222, 22);
+            this.cbCajero.TabIndex = 7;
+            // 
             // labelControl4
             // 
             this.labelControl4.Location = new System.Drawing.Point(42, 592);
@@ -283,7 +285,7 @@ namespace PV2
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(42, 628);
+            this.labelControl5.Location = new System.Drawing.Point(382, 592);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(68, 16);
             this.labelControl5.TabIndex = 9;
@@ -297,11 +299,27 @@ namespace PV2
             this.labelControl6.TabIndex = 10;
             this.labelControl6.Text = "Total: ";
             // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Appearance.Options.UseFont = true;
+            this.btnIngresar.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnIngresar.AppearancePressed.Options.UseBackColor = true;
+            this.btnIngresar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnIngresar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnIngresar.Location = new System.Drawing.Point(456, 12);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
+            this.btnIngresar.Size = new System.Drawing.Size(182, 79);
+            this.btnIngresar.TabIndex = 11;
+            this.btnIngresar.Text = "Nueva venta";
+            // 
             // frmNVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 670);
+            this.ClientSize = new System.Drawing.Size(990, 639);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
@@ -314,16 +332,17 @@ namespace PV2
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.pcVentas);
             this.Name = "frmNVenta";
-            this.Text = "frmNVenta";
+            this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.frmNVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcVentas)).EndInit();
             this.pcVentas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvVentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkMayoreo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbCajero.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ventasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,5 +375,6 @@ namespace PV2
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.SimpleButton btnIngresar;
     }
 }

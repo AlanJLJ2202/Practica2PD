@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BML;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace PV2
         public frmNVenta()
         {
             InitializeComponent();
+        }
+
+        private void frmNVenta_Load(object sender, EventArgs e)
+        {
+            ventasBindingSource.DataSource = new Ventas().GetAll();
+            gvVentas.BestFitColumns();
         }
     }
 }
