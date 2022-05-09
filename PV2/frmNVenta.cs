@@ -14,6 +14,8 @@ namespace PV2
 {
     public partial class frmNVenta : DevExpress.XtraEditors.XtraForm
     {
+
+        double importe = 0;
         public frmNVenta()
         {
             InitializeComponent();
@@ -22,7 +24,30 @@ namespace PV2
         private void frmNVenta_Load(object sender, EventArgs e)
         {
             ventasBindingSource.DataSource = new Ventas().GetAll();
+            productoBindingSource.DataSource = new Producto().GetAll();
+            clienteBindingSource.DataSource = new Cliente().GetAll();
+            usuarioBindingSource.DataSource = new Usuario().GetAll();
             gvVentas.BestFitColumns();
+        }
+
+        private void gcVentas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if(checkMayoreo.CheckState == CheckState.Checked)
+            {
+                importe = 12.00;
+                lblImporte.Text = "$" + importe.ToString();
+            }
+            else
+            {
+                importe = 15.00;
+                lblImporte.Text = "$" + importe.ToString();
+            }
+            
         }
     }
 }

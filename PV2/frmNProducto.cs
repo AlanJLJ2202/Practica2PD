@@ -1,14 +1,6 @@
 ﻿using BML;
 using DevExpress.XtraEditors;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace PV2
 {
@@ -49,11 +41,8 @@ namespace PV2
             if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtPrecio.Text) || string.IsNullOrEmpty(txtStock.Text)
                 || string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(cbCategoria.Text) || string.IsNullOrEmpty(cbMarcas.Text))
             {
-
                 XtraMessageBox.Show("Debe completar la informacion", "Error 404");
-
                 return;
-
             }
         }
 

@@ -72,7 +72,7 @@ namespace PV2
             this.txtNombre.Location = new System.Drawing.Point(128, 38);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(194, 22);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -89,7 +89,7 @@ namespace PV2
             this.txtPrecio.Location = new System.Drawing.Point(128, 95);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(194, 22);
-            this.txtPrecio.TabIndex = 12;
+            this.txtPrecio.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -106,7 +106,7 @@ namespace PV2
             this.txtStock.Location = new System.Drawing.Point(128, 146);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(194, 22);
-            this.txtStock.TabIndex = 14;
+            this.txtStock.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -123,7 +123,7 @@ namespace PV2
             this.txtCodigo.Location = new System.Drawing.Point(128, 205);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(194, 22);
-            this.txtCodigo.TabIndex = 16;
+            this.txtCodigo.TabIndex = 4;
             // 
             // labelControl6
             // 
@@ -161,7 +161,7 @@ namespace PV2
             this.cbCategoria.Properties.PopupSizeable = false;
             this.cbCategoria.Properties.ValueMember = "idCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(194, 22);
-            this.cbCategoria.TabIndex = 22;
+            this.cbCategoria.TabIndex = 5;
             // 
             // categoriaBindingSource
             // 
@@ -183,7 +183,7 @@ namespace PV2
             this.cbMarcas.Properties.PopupSizeable = false;
             this.cbMarcas.Properties.ValueMember = "idMarca";
             this.cbMarcas.Size = new System.Drawing.Size(194, 22);
-            this.cbMarcas.TabIndex = 23;
+            this.cbMarcas.TabIndex = 6;
             // 
             // marcaBindingSource
             // 
@@ -194,11 +194,11 @@ namespace PV2
             this.btnCancelar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Appearance.Options.UseFont = true;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
             this.btnCancelar.Location = new System.Drawing.Point(210, 374);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(125, 29);
-            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -206,11 +206,11 @@ namespace PV2
             // 
             this.btnAceptar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Appearance.Options.UseFont = true;
-            this.btnAceptar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnAceptar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAceptar.ImageOptions.SvgImage")));
             this.btnAceptar.Location = new System.Drawing.Point(37, 374);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(125, 29);
-            this.btnAceptar.TabIndex = 24;
+            this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
